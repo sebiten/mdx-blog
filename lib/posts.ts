@@ -47,6 +47,7 @@ export async function getPostByName(
       parseFrontmatter: true,
       mdxOptions: {
         rehypePlugins: [
+          // @ts-ignore
           rehypeHighlight,
           rehypeSlug,
           [
